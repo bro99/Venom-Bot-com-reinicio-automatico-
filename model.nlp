@@ -1,0 +1,922 @@
+{
+  "settings": {
+    "languages": [
+      "pt"
+    ],
+    "forceNER": true,
+    "tag": "nlp",
+    "threshold": 0.5,
+    "autoLoad": true,
+    "autoSave": true,
+    "modelFileName": "model.nlp",
+    "calculateSentiment": true
+  },
+  "nluManager": {
+    "settings": {
+      "tag": "nlu-manager"
+    },
+    "locales": [
+      "pt"
+    ],
+    "languageNames": {},
+    "domainManagers": {
+      "pt": {
+        "settings": {
+          "locale": "pt",
+          "trainByDomain": false,
+          "tag": "domain-manager-pt",
+          "nluByDomain": {
+            "default": {
+              "className": "NeuralNlu",
+              "settings": {}
+            }
+          },
+          "useStemDict": true
+        },
+        "stemDict": {
+          "oii": {
+            "intent": "saudacao",
+            "domain": "default"
+          },
+          "bem,tud": {
+            "intent": "saudacao",
+            "domain": "default"
+          },
+          "boa,tard": {
+            "intent": "saudacao",
+            "domain": "default"
+          },
+          "boa,noit": {
+            "intent": "saudacao",
+            "domain": "default"
+          },
+          "bom,dia": {
+            "intent": "saudacao",
+            "domain": "default"
+          },
+          "opa": {
+            "intent": "saudacao",
+            "domain": "default"
+          },
+          "suav": {
+            "intent": "saudacao",
+            "domain": "default"
+          },
+          "boa,de": {
+            "intent": "saudacao",
+            "domain": "default"
+          },
+          "com,esta": {
+            "intent": "saudacao",
+            "domain": "default"
+          },
+          "fal,neg": {
+            "intent": "saudacao",
+            "domain": "default"
+          },
+          "gat,oi": {
+            "intent": "saudacao",
+            "domain": "default"
+          },
+          "gatinh,oi": {
+            "intent": "saudacao",
+            "domain": "default"
+          },
+          "lind,oi": {
+            "intent": "saudacao",
+            "domain": "default"
+          },
+          "oi,princes": {
+            "intent": "saudacao",
+            "domain": "default"
+          },
+          "oi,xuxu": {
+            "intent": "saudacao",
+            "domain": "default"
+          },
+          "ptt": {
+            "intent": "saudacao",
+            "domain": "default"
+          },
+          "consult,quer": {
+            "intent": "consulta",
+            "domain": "default"
+          },
+          "consult,pod": {
+            "intent": "consulta",
+            "domain": "default"
+          },
+          "consult,faz,quer,uma": {
+            "intent": "consulta",
+            "domain": "default"
+          },
+          "consult,favor,por": {
+            "intent": "consulta",
+            "domain": "default"
+          },
+          "emprestim": {
+            "intent": "consulta",
+            "domain": "default"
+          },
+          "emprestim,faz,quer,um": {
+            "intent": "consulta",
+            "domain": "default"
+          },
+          "consult,cpf": {
+            "intent": "consulta",
+            "domain": "default"
+          },
+          "consult,mim,par": {
+            "intent": "consulta",
+            "domain": "default"
+          },
+          "consult,cpf,e,fac,favor,me,o,um": {
+            "intent": "consulta",
+            "domain": "default"
+          },
+          "ajud,com,consult,me,tem,uma": {
+            "intent": "consulta",
+            "domain": "default"
+          },
+          "obrig": {
+            "intent": "agradecimento",
+            "domain": "default"
+          },
+          "agradec": {
+            "intent": "agradecimento",
+            "domain": "default"
+          },
+          "val": {
+            "intent": "agradecimento",
+            "domain": "default"
+          }
+        },
+        "intentDict": {
+          "saudacao": "default",
+          "consulta": "default",
+          "agradecimento": "default"
+        },
+        "sentences": [
+          {
+            "domain": "default",
+            "utterance": "oii",
+            "intent": "saudacao"
+          },
+          {
+            "domain": "default",
+            "utterance": "tudo bem",
+            "intent": "saudacao"
+          },
+          {
+            "domain": "default",
+            "utterance": "boa tarde",
+            "intent": "saudacao"
+          },
+          {
+            "domain": "default",
+            "utterance": "boa noite",
+            "intent": "saudacao"
+          },
+          {
+            "domain": "default",
+            "utterance": "bom dia",
+            "intent": "saudacao"
+          },
+          {
+            "domain": "default",
+            "utterance": "opa",
+            "intent": "saudacao"
+          },
+          {
+            "domain": "default",
+            "utterance": "suave",
+            "intent": "saudacao"
+          },
+          {
+            "domain": "default",
+            "utterance": "de boa?",
+            "intent": "saudacao"
+          },
+          {
+            "domain": "default",
+            "utterance": "como está?",
+            "intent": "saudacao"
+          },
+          {
+            "domain": "default",
+            "utterance": "fala nego",
+            "intent": "saudacao"
+          },
+          {
+            "domain": "default",
+            "utterance": "oi gata",
+            "intent": "saudacao"
+          },
+          {
+            "domain": "default",
+            "utterance": "oi gatinha",
+            "intent": "saudacao"
+          },
+          {
+            "domain": "default",
+            "utterance": "oi linda",
+            "intent": "saudacao"
+          },
+          {
+            "domain": "default",
+            "utterance": "oi princesa",
+            "intent": "saudacao"
+          },
+          {
+            "domain": "default",
+            "utterance": "oi xuxu",
+            "intent": "saudacao"
+          },
+          {
+            "domain": "default",
+            "utterance": "ptt",
+            "intent": "saudacao"
+          },
+          {
+            "domain": "default",
+            "utterance": "quero consultar",
+            "intent": "consulta"
+          },
+          {
+            "domain": "default",
+            "utterance": "poderiam consultar",
+            "intent": "consulta"
+          },
+          {
+            "domain": "default",
+            "utterance": "quero fazer uma consulta",
+            "intent": "consulta"
+          },
+          {
+            "domain": "default",
+            "utterance": "consulte por favor",
+            "intent": "consulta"
+          },
+          {
+            "domain": "default",
+            "utterance": "emprestimo",
+            "intent": "consulta"
+          },
+          {
+            "domain": "default",
+            "utterance": "quero fazer um emprestimo",
+            "intent": "consulta"
+          },
+          {
+            "domain": "default",
+            "utterance": "consultar cpf",
+            "intent": "consulta"
+          },
+          {
+            "domain": "default",
+            "utterance": "consulte para mim",
+            "intent": "consulta"
+          },
+          {
+            "domain": "default",
+            "utterance": "me faça um favor e consulte o cpf",
+            "intent": "consulta"
+          },
+          {
+            "domain": "default",
+            "utterance": "tem como me ajudar com uma consulta",
+            "intent": "consulta"
+          },
+          {
+            "domain": "default",
+            "utterance": "obrigado",
+            "intent": "agradecimento"
+          },
+          {
+            "domain": "default",
+            "utterance": "agradeço",
+            "intent": "agradecimento"
+          },
+          {
+            "domain": "default",
+            "utterance": "valeu",
+            "intent": "agradecimento"
+          }
+        ],
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "locale": "pt",
+              "tag": "nlu-pt",
+              "keepStopwords": true,
+              "nonefeatureValue": 1,
+              "nonedeltaMultiplier": 1.2,
+              "spellCheck": false,
+              "spellCheckDistance": 1,
+              "filterZeros": true,
+              "log": true
+            },
+            "features": {
+              "oii": 1,
+              "tud": 1,
+              "bem": 1,
+              "boa": 1,
+              "tard": 1,
+              "noit": 1,
+              "bom": 1,
+              "dia": 1,
+              "opa": 1,
+              "suav": 1,
+              "de": 1,
+              "com": 1,
+              "esta": 1,
+              "fal": 1,
+              "neg": 1,
+              "oi": 1,
+              "gat": 1,
+              "gatinh": 1,
+              "lind": 1,
+              "princes": 1,
+              "xuxu": 1,
+              "ptt": 1,
+              "quer": 1,
+              "consult": 1,
+              "pod": 1,
+              "faz": 1,
+              "uma": 1,
+              "por": 1,
+              "favor": 1,
+              "emprestim": 1,
+              "um": 1,
+              "cpf": 1,
+              "par": 1,
+              "mim": 1,
+              "me": 1,
+              "fac": 1,
+              "e": 1,
+              "o": 1,
+              "tem": 1,
+              "ajud": 1,
+              "obrig": 1,
+              "agradec": 1,
+              "val": 1
+            },
+            "intents": {
+              "saudacao": 1,
+              "consulta": 1,
+              "agradecimento": 1
+            },
+            "intentFeatures": {
+              "saudacao": {
+                "oii": 1,
+                "tud": 1,
+                "bem": 1,
+                "boa": 1,
+                "tard": 1,
+                "noit": 1,
+                "bom": 1,
+                "dia": 1,
+                "opa": 1,
+                "suav": 1,
+                "de": 1,
+                "com": 1,
+                "esta": 1,
+                "fal": 1,
+                "neg": 1,
+                "oi": 1,
+                "gat": 1,
+                "gatinh": 1,
+                "lind": 1,
+                "princes": 1,
+                "xuxu": 1,
+                "ptt": 1
+              },
+              "consulta": {
+                "quer": 1,
+                "consult": 1,
+                "pod": 1,
+                "faz": 1,
+                "uma": 1,
+                "por": 1,
+                "favor": 1,
+                "emprestim": 1,
+                "um": 1,
+                "cpf": 1,
+                "par": 1,
+                "mim": 1,
+                "me": 1,
+                "fac": 1,
+                "e": 1,
+                "o": 1,
+                "tem": 1,
+                "com": 1,
+                "ajud": 1
+              },
+              "agradecimento": {
+                "obrig": 1,
+                "agradec": 1,
+                "val": 1
+              }
+            },
+            "featuresToIntent": {
+              "oii": [
+                "saudacao"
+              ],
+              "tud": [
+                "saudacao"
+              ],
+              "bem": [
+                "saudacao"
+              ],
+              "boa": [
+                "saudacao"
+              ],
+              "tard": [
+                "saudacao"
+              ],
+              "noit": [
+                "saudacao"
+              ],
+              "bom": [
+                "saudacao"
+              ],
+              "dia": [
+                "saudacao"
+              ],
+              "opa": [
+                "saudacao"
+              ],
+              "suav": [
+                "saudacao"
+              ],
+              "de": [
+                "saudacao"
+              ],
+              "com": [
+                "saudacao",
+                "consulta"
+              ],
+              "esta": [
+                "saudacao"
+              ],
+              "fal": [
+                "saudacao"
+              ],
+              "neg": [
+                "saudacao"
+              ],
+              "oi": [
+                "saudacao"
+              ],
+              "gat": [
+                "saudacao"
+              ],
+              "gatinh": [
+                "saudacao"
+              ],
+              "lind": [
+                "saudacao"
+              ],
+              "princes": [
+                "saudacao"
+              ],
+              "xuxu": [
+                "saudacao"
+              ],
+              "ptt": [
+                "saudacao"
+              ],
+              "quer": [
+                "consulta"
+              ],
+              "consult": [
+                "consulta"
+              ],
+              "pod": [
+                "consulta"
+              ],
+              "faz": [
+                "consulta"
+              ],
+              "uma": [
+                "consulta"
+              ],
+              "por": [
+                "consulta"
+              ],
+              "favor": [
+                "consulta"
+              ],
+              "emprestim": [
+                "consulta"
+              ],
+              "um": [
+                "consulta"
+              ],
+              "cpf": [
+                "consulta"
+              ],
+              "par": [
+                "consulta"
+              ],
+              "mim": [
+                "consulta"
+              ],
+              "me": [
+                "consulta"
+              ],
+              "fac": [
+                "consulta"
+              ],
+              "e": [
+                "consulta"
+              ],
+              "o": [
+                "consulta"
+              ],
+              "tem": [
+                "consulta"
+              ],
+              "ajud": [
+                "consulta"
+              ],
+              "obrig": [
+                "agradecimento"
+              ],
+              "agradec": [
+                "agradecimento"
+              ],
+              "val": [
+                "agradecimento"
+              ]
+            },
+            "neuralNetwork": {
+              "settings": {
+                "locale": "pt",
+                "tag": "nlu-pt",
+                "keepStopwords": true,
+                "nonefeatureValue": 1,
+                "nonedeltaMultiplier": 1.2,
+                "spellCheck": false,
+                "spellCheckDistance": 1,
+                "filterZeros": true,
+                "log": true
+              },
+              "features": [
+                "oii",
+                "tud",
+                "bem",
+                "boa",
+                "tard",
+                "noit",
+                "bom",
+                "dia",
+                "opa",
+                "suav",
+                "de",
+                "com",
+                "esta",
+                "fal",
+                "neg",
+                "oi",
+                "gat",
+                "gatinh",
+                "lind",
+                "princes",
+                "xuxu",
+                "ptt",
+                "quer",
+                "consult",
+                "pod",
+                "faz",
+                "uma",
+                "por",
+                "favor",
+                "emprestim",
+                "um",
+                "cpf",
+                "par",
+                "mim",
+                "me",
+                "fac",
+                "e",
+                "o",
+                "tem",
+                "ajud",
+                "obrig",
+                "agradec",
+                "val"
+              ],
+              "intents": [
+                "saudacao",
+                "consulta",
+                "agradecimento"
+              ],
+              "perceptrons": [
+                [
+                  6.724180698394775,
+                  3.3942666053771973,
+                  3.3942666053771973,
+                  5.088858127593994,
+                  1.7105735540390015,
+                  1.708829402923584,
+                  3.395188808441162,
+                  3.395188808441162,
+                  6.7189226150512695,
+                  6.702459335327148,
+                  1.670369029045105,
+                  3.0191738605499268,
+                  3.7568373680114746,
+                  3.388033151626587,
+                  3.388033151626587,
+                  5.649336814880371,
+                  1.1346389055252075,
+                  1.1325749158859253,
+                  1.1304303407669067,
+                  1.127678632736206,
+                  1.1240330934524536,
+                  6.6676344871521,
+                  -2.5732669830322266,
+                  -6.776976108551025,
+                  -1.421568512916565,
+                  -1.433998465538025,
+                  -1.340030550956726,
+                  -0.8667464256286621,
+                  -1.0816410779953003,
+                  -7.465887546539307,
+                  -1.0488797426223755,
+                  -1.1546106338500977,
+                  -0.7063688039779663,
+                  -0.7063688039779663,
+                  -0.9380173087120056,
+                  -0.14676862955093384,
+                  -0.14676862955093384,
+                  -0.14676862955093384,
+                  -0.7376333475112915,
+                  -0.7376333475112915,
+                  -7.43611478805542,
+                  -7.416996002197266,
+                  -7.396699905395508,
+                  7.497650188181149
+                ],
+                [
+                  -1.7077908515930176,
+                  -0.864873468875885,
+                  -0.864873468875885,
+                  -1.367842197418213,
+                  -0.4970196485519409,
+                  -0.44793155789375305,
+                  -0.8646225929260254,
+                  -0.8646225929260254,
+                  -1.7005168199539185,
+                  -1.695624828338623,
+                  -0.35706958174705505,
+                  -0.47721460461616516,
+                  -1.3466333150863647,
+                  -0.8618412017822266,
+                  -0.8618412017822266,
+                  -1.45536470413208,
+                  -0.29820308089256287,
+                  -0.2849021553993225,
+                  -0.2749975025653839,
+                  -0.2727068066596985,
+                  -0.2711871266365051,
+                  -1.6846508979797363,
+                  2.048196792602539,
+                  10.30140495300293,
+                  2.347079277038574,
+                  -0.5387595891952515,
+                  0.5246871113777161,
+                  1.3444887399673462,
+                  0.972018837928772,
+                  11.911361694335938,
+                  -0.5723448395729065,
+                  2.3767104148864746,
+                  1.1323987245559692,
+                  1.1323987245559692,
+                  0.5038712620735168,
+                  -0.36992907524108887,
+                  -0.36992907524108887,
+                  -0.36992907524108887,
+                  0.8706871867179871,
+                  0.8706871867179871,
+                  -1.7213464975357056,
+                  -1.7179863452911377,
+                  -1.7143956422805786,
+                  1.739453605487207
+                ],
+                [
+                  -2.945023536682129,
+                  -1.495802640914917,
+                  -1.495802640914917,
+                  -2.2805662155151367,
+                  -0.8069484233856201,
+                  -0.7755581140518188,
+                  -1.4950634241104126,
+                  -1.4950634241104126,
+                  -2.9293699264526367,
+                  -2.918692111968994,
+                  -0.6946953535079956,
+                  -1.499659538269043,
+                  -1.4752655029296875,
+                  -1.48728346824646,
+                  -1.48728346824646,
+                  -2.489046096801758,
+                  -0.5190108418464661,
+                  -0.5022851228713989,
+                  -0.49245113134384155,
+                  -0.4879492521286011,
+                  -0.48540040850639343,
+                  -2.8966424465179443,
+                  -0.6832576990127563,
+                  -2.3483521938323975,
+                  -0.6321375370025635,
+                  -0.33409950137138367,
+                  -0.12393773347139359,
+                  -0.3187037706375122,
+                  -0.3496704697608948,
+                  -2.885579824447632,
+                  -0.25934866070747375,
+                  -0.6130267381668091,
+                  -0.3101308345794678,
+                  -0.3101308345794678,
+                  -0.049681149423122406,
+                  -0.01998608186841011,
+                  -0.01998608186841011,
+                  -0.01998608186841011,
+                  -0.020019669085741043,
+                  -0.020019669085741043,
+                  11.220013618469238,
+                  11.210073471069336,
+                  11.18372631072998,
+                  2.983019421769036
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "intentDomains": {},
+    "extraSentences": [
+      [
+        "pt",
+        "oii"
+      ],
+      [
+        "pt",
+        "tudo bem"
+      ],
+      [
+        "pt",
+        "boa tarde"
+      ],
+      [
+        "pt",
+        "boa noite"
+      ],
+      [
+        "pt",
+        "bom dia"
+      ],
+      [
+        "pt",
+        "opa"
+      ],
+      [
+        "pt",
+        "suave"
+      ],
+      [
+        "pt",
+        "de boa?"
+      ],
+      [
+        "pt",
+        "como está?"
+      ],
+      [
+        "pt",
+        "fala nego"
+      ],
+      [
+        "pt",
+        "oi gata"
+      ],
+      [
+        "pt",
+        "oi gatinha"
+      ],
+      [
+        "pt",
+        "oi linda"
+      ],
+      [
+        "pt",
+        "oi princesa"
+      ],
+      [
+        "pt",
+        "oi xuxu"
+      ],
+      [
+        "pt",
+        "ptt"
+      ],
+      [
+        "pt",
+        "quero consultar"
+      ],
+      [
+        "pt",
+        "poderiam consultar"
+      ],
+      [
+        "pt",
+        "quero fazer uma consulta"
+      ],
+      [
+        "pt",
+        "consulte por favor"
+      ],
+      [
+        "pt",
+        "emprestimo"
+      ],
+      [
+        "pt",
+        "quero fazer um emprestimo"
+      ],
+      [
+        "pt",
+        "consultar cpf"
+      ],
+      [
+        "pt",
+        "consulte para mim"
+      ],
+      [
+        "pt",
+        "me faça um favor e consulte o cpf"
+      ],
+      [
+        "pt",
+        "tem como me ajudar com uma consulta"
+      ],
+      [
+        "pt",
+        "obrigado"
+      ],
+      [
+        "pt",
+        "agradeço"
+      ],
+      [
+        "pt",
+        "valeu"
+      ]
+    ]
+  },
+  "ner": {
+    "settings": {
+      "tag": "ner",
+      "entityPreffix": "%",
+      "entitySuffix": "%"
+    },
+    "rules": {}
+  },
+  "nlgManager": {
+    "settings": {
+      "tag": "nlg-manager"
+    },
+    "responses": {
+      "pt": {
+        "saudacao": [
+          {
+            "answer": "Olá 😍🥰, estou aqui para te ajudar.\nQual sua duvida?"
+          },
+          {
+            "answer": "Olá, sou um BOT. Adoro tirar dúvidas😍🥰, qual é a sua?"
+          }
+        ],
+        "consulta": [
+          {
+            "answer": "Olá, envie-me o CPF por gentileza\n🤩🤩🤩"
+          }
+        ],
+        "agradecimento": [
+          {
+            "answer": "Eu agradeço rsrs\n 🤩🤩🤩"
+          }
+        ]
+      }
+    }
+  },
+  "actionManager": {
+    "settings": {
+      "tag": "action-manager"
+    },
+    "actions": {}
+  },
+  "slotManager": {}
+}
